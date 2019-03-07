@@ -26,15 +26,25 @@ public class recursion {
   }
 
   private static int fabonacci(int n){
-      
+if(n==0){
+    return 0;
+}
+if(n==1){
+    return 1;
+}
+return fabonacci(n-1)+fabonacci(n-2);
   }
 
     public static void main(String[] args) {
+
         //countDown(4);
        //int a = sum(4);
         //System.out.println(a);
         int b = factorial(20);
         System.out.println(b);
+        for (int i=0;i<15;i++){
+            System.out.println(fabonacci(i));
+        }
 
     }
 
